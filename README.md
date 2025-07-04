@@ -32,4 +32,6 @@ Este proyecto implementa un sistema de autenticación utilizando Java, Spring Bo
 
 1. Clona el repositorio:
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/ftapiaco/task.services.git
+
+2. Curl: Se encuentra en el archivo Task.postman_Collection.json.

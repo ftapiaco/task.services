@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "bb7a8bec-b06d-40f3-b9f1-bac7c9845e25",
+		"name": "Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "21736051"
+	},
+	"item": [
+		{
+			"name": "JWT_Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"fernando@gmail.com\",\r\n  \"password\": \"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/auth/register"
+			},
+			"response": []
+		},
+		{
+			"name": "JWT_Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"fernando@gmail.com\",\r\n  \"password\": \"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Task_Registro",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2ODY3ODE1ZWVmZmZiYTg2Y2QzMWJjYjUiLCJpYXQiOjE3NTE2MTM4MTQsImV4cCI6MTc1MTYxNzQxNH0.fDjTeDclGel3IPEBF7nAxiKa-E4BYxCD472Y9AirES4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Observacion\",\r\n    \"description\": \"Observar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/v1/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Task_Listar",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2ODY3ODE1ZWVmZmZiYTg2Y2QzMWJjYjUiLCJpYXQiOjE3NTE2MTM4MTQsImV4cCI6MTc1MTYxNzQxNH0.fDjTeDclGel3IPEBF7nAxiKa-E4BYxCD472Y9AirES4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/v1/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Task_Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2ODY3ODE1ZWVmZmZiYTg2Y2QzMWJjYjUiLCJpYXQiOjE3NTE2MTM4MTQsImV4cCI6MTc1MTYxNzQxNH0.fDjTeDclGel3IPEBF7nAxiKa-E4BYxCD472Y9AirES4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Observaciones\",\r\n    \"description\": \"Observar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8083/v1/tasks/68678186efffba86cd31bcb6"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2ODY3ODE1ZWVmZmZiYTg2Y2QzMWJjYjUiLCJpYXQiOjE3NTE2MTM4MTQsImV4cCI6MTc1MTYxNzQxNH0.fDjTeDclGel3IPEBF7nAxiKa-E4BYxCD472Y9AirES4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8083/v1/tasks/68678186efffba86cd31bcb6"
+			},
+			"response": []
+		}
+	]
+}
