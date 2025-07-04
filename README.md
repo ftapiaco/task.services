@@ -1,10 +1,11 @@
-# Proyecto de Autenticación - Spring Boot
+# Proyecto de Tareas con Autenticación - Spring Boot
 
 Este proyecto implementa un sistema de autenticación utilizando Java, Spring Boot y JWT.
 
 ## Características
 
 - Registro de usuarios
+- Registro de Tareas
 - Inicio de sesión con generación de JWT
 - Validación de credenciales
 - Manejo de excepciones personalizadas
